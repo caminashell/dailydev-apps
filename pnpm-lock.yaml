@@ -11,6 +11,9 @@ importers:
       '@babel/runtime':
         specifier: ^7.17.9
         version: 7.17.9
+      content-scripts-register-polyfill:
+        specifier: ^3.2.1
+        version: 3.2.1
       postcss-rem-to-responsive-pixel:
         specifier: ^5.1.1
         version: 5.1.1
@@ -138,9 +141,9 @@ importers:
       react-virtual:
         specifier: ^2.10.4
         version: 2.10.4(react@17.0.2)
-      webextension-polyfill-ts:
-        specifier: ^0.22.0
-        version: 0.22.0
+      webextension-polyfill:
+        specifier: ^0.10.0
+        version: 0.10.0
     devDependencies:
       '@babel/preset-env':
         specifier: ^7.16.0
@@ -199,6 +202,9 @@ importers:
       '@types/testing-library__jest-dom':
         specifier: ^5.14.6
         version: 5.14.6
+      '@types/webextension-polyfill':
+        specifier: ^0.10.5
+        version: 0.10.7
       '@types/webpack':
         specifier: ^4.41.31
         version: 4.41.31
@@ -9582,6 +9588,10 @@ packages:
 
   /@types/uuid@9.0.7:
     resolution: {integrity: sha512-WUtIVRUZ9i5dYXefDEAI7sh9/O7jGvHg7Df/5O/gtH3Yabe5odI3UWopVR1qbPXQtvOxWu3mM4XxlYeZtMWF4g==}
+    dev: true
+
+  /@types/webextension-polyfill@0.10.7:
+    resolution: {integrity: sha512-10ql7A0qzBmFB+F+qAke/nP1PIonS0TXZAOMVOxEUsm+lGSW6uwVcISFNa0I4Oyj0884TZVWGGMIWeXOVSNFHw==}
     dev: true
 
   /@types/webextension-polyfill@0.8.3:
@@ -21985,6 +21995,10 @@ packages:
     deprecated: This project has moved to @types/webextension-polyfill
     dependencies:
       webextension-polyfill: 0.7.0
+    dev: false
+
+  /webextension-polyfill@0.10.0:
+    resolution: {integrity: sha512-c5s35LgVa5tFaHhrZDnr3FpQpjj1BB+RXhLTYUxGqBVN460HkbM8TBtEqdXWbpTKfzwCcjAZVF7zXCYSKtcp9g==}
     dev: false
 
   /webextension-polyfill@0.7.0:

@@ -12,13 +12,7 @@
     "128": "icons/128.png"
   },
   "__prod__permissions": ["scripting"],
-  "__prod|chrome|opera|edge__host_permissions": [
-    "https://daily.dev/",
-    "https://*.daily.dev/",
-    "https://dailynow.co/",
-    "https://*.dailynow.co/"
-  ],
-  "__firefox|prod__permissions": [
+  "__prod__host_permissions": [
     "https://daily.dev/",
     "https://*.daily.dev/",
     "https://dailynow.co/",
@@ -26,7 +20,7 @@
   ],
   "__dev__permissions": ["storage", "scripting"],
   "__dev__host_permissions": ["http://localhost/", "http://*.local.com/"],
-  "__firefox|dev__permissions": ["storage", "http://localhost/", "http://*.local.com/"],
+  "__dev__permissions": ["storage", "http://localhost/", "http://*.local.com/"],
   "optional_permissions": ["topSites"],
   "__firefox__optional_permissions": ["topSites", "*://*/*"],
   "__chrome|opera|edge__optional_host_permissions": [ "*://*/*"],
@@ -47,8 +41,7 @@
     }
   },
   "background": {
-    "__chrome|opera|edge__service_worker": "js/background.bundle.js",
-    "__firefox__scripts": ["js/background.bundle.js"]
+    "service_worker": "js/background.bundle.js"
   },
   "chrome_url_overrides": {
     "newtab": "index.html"
